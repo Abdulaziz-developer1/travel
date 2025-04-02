@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s;
+}
+
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background: url('/assets/bg.png');
+    background-size: cover;
+}
+
+header *{
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}
+
+nav ul{
+    display: flex;
+    gap: 35px;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .menu-button {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        text-align: center;
+        padding: 30px 0 30px 0;
+        gap: 15px;
+    }
+    nav ul.show {
+        display: flex;
+    }
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+main h1{
+    max-width: 75%;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+
+.green{
+    background-color: #2B6F3E;
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    font-size: 1.3em;
+}
+
+.banner1{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.img{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 80%;
+    gap: 20px;
+}
+
+.img img{
+    width: 50%;
+    height: 90%;
+}
+
+.img img:nth-child(1){
+    margin-top: 20px;
+}
+
+.img img:nth-child(2){
+    margin-top: -20px;
+}
+
+.text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.3em;
+    font-weight: 200;
+    align-items: start;
+}
+
+.text h1{
+    font-size: 50px;
+}
+
+.text p{
+    color: #959595;
+}
+
+.banner2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner2 h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    color: #fff;
+
+}
+
+.card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 3%;
+    height: 100%;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.cards2{
+    color: #000;
+}
+
+.cards2 .card{
+    border-radius: 20px;
+    align-items: center;
+}
+
+.bg1{
+    background: url('/assets/bg1.png');
+    background-size: cover;
+}
+
+.bg2{
+    background: url('/assets/bg2.png');
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.bg3{
+    background: url('/assets/bg3.png');
+    background-size: cover;
+}
+
+.bg4{
+    background: url('/assets/bg4.png');
+    background-size: cover;
+}
+
+.bg5{
+    background: url('/assets/bg5.png');
+    background-size: cover;
+}
+
+.bg6{
+    background: url('/assets/bg6.png');
+    background-size: cover;
+}
+
+.content{
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
+}
+
+.content p{
+    color: #959595;
+}
+
+.banner3{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner3 .green{
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.green h1{
+    font-size: 35px;
+}
+
+.green p{
+    max-width: 300px;
+}
+
+.white{
+    background: #fff;
+    color: #2B6F3E;
+}
+
+footer{
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2B6F3E;
+    color: #fff;
+}
+
+@media(max-width:1000px) {
+    section{
+        padding: 5%;
+        height: auto;
+    }
+
+    .banner1{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .green{
+        padding: 5% 15%;
+    }
+}
